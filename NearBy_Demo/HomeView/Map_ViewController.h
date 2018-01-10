@@ -9,17 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "MapPoint.h"
+
+#define kGOOGLE_API_KEY @"AIzaSyAKGborGL-ZVOkGgKi2u-y_04MB6f2pfes"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 @interface Map_ViewController : UIViewController<CLLocationManagerDelegate,MKMapViewDelegate>
 {
     CLLocationManager *objLocationManager;
-    double latitude_UserLocation, longitude_UserLocation;
-    
+    CLLocationCoordinate2D currentCentre;
+    int currenDist;
+    BOOL firstLaunch;
 }
 
-@property (weak, nonatomic) IBOutlet MKMapView *objMapView;
+- (IBAction)buttonDidPressed:(id)sender;
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) CLLocation* currentLocation;
+@property (weak, nonatomic) IBOutlet MKMapView *objMapView;
 
 @end

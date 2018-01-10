@@ -15,6 +15,7 @@
 		30705CBD200601CF002C4F4A /* Map_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30705CBB200601CF002C4F4A /* Map_ViewController.xib */; };
 		30705CBF20060277002C4F4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30705CBE20060277002C4F4A /* CoreLocation.framework */; };
 		30705CC1200604FD002C4F4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30705CC0200604FD002C4F4A /* MapKit.framework */; };
+		30705CC4200615FA002C4F4A /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 30705CC3200615FA002C4F4A /* MapPoint.m */; };
 		D648E12887FDEAD813F8EE03 /* libPods-NearBy_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 192BE92921D5214970696E91 /* libPods-NearBy_Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		30705CBB200601CF002C4F4A /* Map_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Map_ViewController.xib; sourceTree = "<group>"; };
 		30705CBE20060277002C4F4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		30705CC0200604FD002C4F4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		30705CC2200615FA002C4F4A /* MapPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		30705CC3200615FA002C4F4A /* MapPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 		686316A30BEA0C45576CAB00 /* Pods-NearBy_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearBy_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NearBy_Demo/Pods-NearBy_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		9E1AFF11053E9DA6F3229082 /* Pods-NearBy_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearBy_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NearBy_Demo/Pods-NearBy_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +91,8 @@
 				30705CB9200601CF002C4F4A /* Map_ViewController.h */,
 				30705CBA200601CF002C4F4A /* Map_ViewController.m */,
 				30705CBB200601CF002C4F4A /* Map_ViewController.xib */,
+				30705CC2200615FA002C4F4A /* MapPoint.h */,
+				30705CC3200615FA002C4F4A /* MapPoint.m */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30705CAD2005FC17002C4F4A /* main.m in Sources */,
+				30705CC4200615FA002C4F4A /* MapPoint.m in Sources */,
 				30705C9F2005FC17002C4F4A /* AppDelegate.m in Sources */,
 				30705CBC200601CF002C4F4A /* Map_ViewController.m in Sources */,
 			);

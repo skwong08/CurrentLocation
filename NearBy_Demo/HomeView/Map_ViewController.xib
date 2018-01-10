@@ -22,18 +22,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZVK-Yr-dY7">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="pOr-oQ-Zx0"/>
                     </connections>
                 </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqt-ce-X57">
+                    <rect key="frame" x="20" y="40" width="335" height="30"/>
+                    <state key="normal" title="Search This Area Restaurants"/>
+                    <connections>
+                        <action selector="buttonDidPressed:" destination="-1" eventType="touchUpInside" id="jF4-tb-9u9"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ZVK-Yr-dY7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8iJ-QM-80I"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ZVK-Yr-dY7" secondAttribute="bottom" id="CKD-fC-hlC"/>
                 <constraint firstAttribute="trailing" secondItem="ZVK-Yr-dY7" secondAttribute="trailing" id="Cer-dL-aMk"/>
-                <constraint firstItem="ZVK-Yr-dY7" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Vbn-us-3ZH"/>
+                <constraint firstItem="iqt-ce-X57" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="lSS-ns-uuV"/>
+                <constraint firstItem="ZVK-Yr-dY7" firstAttribute="top" secondItem="iqt-ce-X57" secondAttribute="bottom" constant="8" id="o2I-8f-jm2"/>
+                <constraint firstItem="iqt-ce-X57" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="qHl-uZ-CTY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iqt-ce-X57" secondAttribute="trailing" constant="20" id="zZg-KX-yPS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
