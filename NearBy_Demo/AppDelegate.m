@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+@import GooglePlaces;
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    Map_ViewController *mapView = [[Map_ViewController alloc] initWithNibName:@"Map_ViewController" bundle:nil];
+    self.window.rootViewController = mapView;
+    [self.window makeKeyAndVisible];
+    
+
+    
     return YES;
 }
 
